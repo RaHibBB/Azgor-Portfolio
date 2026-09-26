@@ -1,8 +1,8 @@
-// Site content. Edit here, then run: node src/build.mjs
+﻿// Site content. Edit here, then run: node src/build.mjs
 
 export const site = {
   name: "Azgor Hossin",
-  url: "https://azgor-hossin.vercel.app", // change to the real domain after deploying
+  url: "https://azgor-portfolio.vercel.app", // change if a custom domain is added
 };
 
 export const services = [
@@ -65,7 +65,7 @@ export const work = [
   ["store", "store-tactical-outdoor", "Tactical outdoor store", "Spring sale homepage", 640, 1540],
   ["store", "store-fairy-wings", "Fairy wings store", "One product store", 640, 2002],
   ["store", "store-playstation-portal", "Gaming accessory store", "One product store", 640, 1136],
-  ["store", "store-valentine-roses", "Preserved roses store", "Valentine’s Day campaign", 640, 1318],
+  ["store", "store-valentine-roses", "Preserved roses store", "Valentineâ€™s Day campaign", 640, 1318],
   ["store", "store-trend-nifty", "Trend Nifty", "Gadget store homepage", 640, 1258],
   ["store", "store-gifts", "Gift store", "Homepage with top categories", 640, 1288],
   ["store", "store-inara", "Inara", "Best sellers homepage", 640, 674],
