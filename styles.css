@@ -501,7 +501,7 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1.5
 .pdp__trust { font-size: 12px; color: var(--ink-soft); }
 .pdp__acc { display: grid; border-top: 1px solid var(--rule); }
 .pdp__acc > span { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--rule); font-weight: 600; }
-.pdp__acc > span::after { content: ""; width: 8px; height: 8px; border-right: 2px solid var(--ink); border-bottom: 2px solid var(--ink); transform: rotate(45deg) translateY(-3px); }
+.pdp__acc > span::after { content: ""; width: 12px; height: 8px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2316161a' stroke-width='2'/%3E%3C/svg%3E") center / contain no-repeat; }
 .pdp__acc > span:has(.pin)::after { margin-left: auto; }
 .pdp__acc .pin { margin-left: 8px; margin-right: 10px; }
 .pdp__fbt { padding: 10px; border: 1.5px dashed var(--ink-faint); border-radius: 6px; font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
