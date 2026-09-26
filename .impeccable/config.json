@@ -26,6 +26,15 @@
         ],
         "createdAt": "2026-09-26T12:46:27.029Z",
         "reason": "claude: 33-35 char receipt small-print lines (header tagline, 'Tap any line' hint) are short labels in the committed receipt world"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "styles.css"
+        ],
+        "createdAt": "2026-09-26T13:32:52.026Z",
+        "reason": "claude: hard-stop scroll-progress fill on the one authored statement (Small details. Big sales.), not a decorative gradient"
       }
     ]
   }

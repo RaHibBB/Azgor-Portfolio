@@ -1,20 +1,51 @@
 # Azgor Hossin — Shopify services site
 
-Static one-page site: `index.html`, `styles.css`, `script.js`, `favicon.svg`. No build step.
+A static multi-page site with no build step on Vercel. There are 12 pages:
 
-## Before going live, fill these in
+| URL | File |
+|---|---|
+| `/` | `index.html` |
+| `/services` | `services.html` |
+| `/services/product-research` and the other 6 service pages | `services/*.html` |
+| `/portfolio` | `portfolio.html` |
+| `/about` | `about.html` |
+| `/contact` | `contact.html` |
 
-1. **Contact links**: the `CONTACT` block at the top of `script.js`, which holds WhatsApp number, email, Fiverr URL and Upwork URL. Until you set them, every contact button scrolls to the contact section.
-2. **Sample content** is labelled on the page and should be swapped for real material when you have it:
-   - Research sheet rows (tagged "Example data, not real results")
-   - The "MagGrip 360" before/after title (tagged "Example")
-   - The product page illustration (tagged "Illustration")
-   - The VA shift log (tagged "Example schedule")
-3. **Proof**: the only figures used are "200+ stores" and "2+ years", both taken from Azgor's own service document. Real reviews or screenshots can go in the contact section later.
+## Editing pages
+
+Every page is generated from `src/build.mjs` (layout and copy) and `src/data.mjs` (services and the portfolio list). Edit those files, then run this from the project root:
+
+```
+node src/build.mjs
+```
+
+Don't edit the generated `.html` files by hand. The next build overwrites them.
+
+## Before going live
+
+1. **Contact links:** fill in the `CONTACT` block at the top of `script.js` (WhatsApp number, email, Fiverr URL, Upwork URL). Until then, every contact button points to `/contact`.
+2. **Domain:** set `site.url` in `src/data.mjs` to the real domain, then rebuild. The share (OG) image uses it.
+
+## Content sources
+
+All content comes from the friend's Google Drive folder "shopify":
+
+- Service copy comes from the Doc "Shopify Dropshipping & E-Commerce Services" and the untitled PDF, which supplied the skills list and "why hire me".
+- The research table uses real rows from `Product Research - Sheet1.pdf`, with the links removed.
+- The description sample is from the "Baby Electric Nail Polisher" doc.
+- Portfolio images are the store screenshots, converted to WebP at 640px wide. Very long pages are cut off at 6400px.
+- Results come from the Shopify analytics screenshot, with the store name blacked out.
+- The orders table comes from the Shopify orders screenshot, with customer names removed.
+
+Left out on purpose:
+
+- The GreenPan.us screenshot, which is GreenPan's own site. Using it would imply he built GreenPan.
+- The two PDFs `Shopify Product Page Desing.pdf` and `screencapture-app-funnelish-funnels…pdf`.
+- The duplicate files that appear in more than one folder.
 
 ## Deploy on Vercel
 
-Import the folder or repo in Vercel with the framework preset set to **Other**. It needs no build command, and the output directory is the project root. You can also deploy from this folder with the Vercel CLI:
+Import the repo with the framework preset set to **Other**. Leave the build command empty and use the project root as the output directory. `vercel.json` turns on clean URLs. To deploy from this folder with the CLI:
 
 ```
 vercel --prod

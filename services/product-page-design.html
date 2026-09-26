@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopify Product & Landing Page Design — Azgor Hossin</title>
+  <meta name="description" content="High-converting Shopify product pages and landing pages built with the theme editor, GemPages, PageFly, Shogun and Zipify: galleries, trust badges, reviews, upsells and mobile-first layouts.">
+  <meta name="theme-color" content="#f2ede4">
+  <meta property="og:title" content="Shopify Product & Landing Page Design — Azgor Hossin">
+  <meta property="og:description" content="High-converting Shopify product pages and landing pages built with the theme editor, GemPages, PageFly, Shogun and Zipify: galleries, trust badges, reviews, upsells and mobile-first layouts.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://azgor-hossin.vercel.app/img/work/store-mojo-beauty.webp">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Hanken+Grotesk:wght@400;500;600;700&family=Martian+Mono:wdth,wght@75..112.5,400..700&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<!--
+THESIS: A Shopify specialist's site where his real store pages are the portrait; refuses the category's gradient hero and icon-card grid.
+OWN-WORLD: Layout after alejandroha.com: giant thin-wide name, [bracket] headings, pill buttons, generous air, one scroll-driven statement. Palette after silviamalavasi.com: warm white #f2ede4, black #0a0907, acid green #b8ff00, hot pink #ff006e, yellow #f3cf00. Anybody (wide, 100–900) for display, Hanken Grotesk for text, Martian Mono for data.
+STORY: A store owner sees what he does, sees 36 real pages and a real research sheet, and messages him on WhatsApp.
+FIRST VIEWPORT: Full-width name AZGOR [HOSSIN]; below it, left: headline, lead and WhatsApp/quote pills; right: four columns of his store pages drifting upward.
+FORM: User-pinned direction (alejandroha.com layout + silviamalavasi.com palette); seed key 5c66db7f superseded.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav nav--always" id="nav">
+  <div class="nav__in">
+    <a class="nav__brand" href="/" aria-label="Azgor Hossin, home">Azgor [Hossin]</a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__drop">
+        <button type="button" aria-expanded="false" aria-controls="svc-menu">Services <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+        <div class="nav__menu" id="svc-menu"><a href="/services">All services</a><a href="/services/product-research">Product research</a><a href="/services/product-listing">Listings & SEO descriptions</a><a href="/services/product-page-design">Product & landing page design</a><a href="/services/store-setup">Store setup & theme customization</a><a href="/services/order-fulfillment">Order fulfillment</a><a href="/services/shopify-va">Full-time Shopify VA</a><a href="/services/woocommerce-funnels">WooCommerce funnels</a></div>
+      </div>
+      <a href="/portfolio">Portfolio</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div class="nav__cta">
+      <a class="pill pill--black pill--sm" data-link="whatsapp" href="/contact">WhatsApp</a>
+      <a class="pill pill--acid pill--sm" href="/contact">Get a quote</a>
+    </div>
+    <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="2.2"/></svg></button>
+  </div>
+</header>
+<div class="menu dark" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu__top"><a class="nav__brand" style="opacity:1;transform:none" href="/">Azgor [Hossin]</a><button class="menu__close" type="button" aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.5"/></svg></button></div>
+  <nav aria-label="Mobile">
+    <a href="/">Home</a>
+    <a href="/services">Services</a>
+    <a class="sub" href="/services/product-research">Product research</a>
+    <a class="sub" href="/services/product-listing">Listings & SEO descriptions</a>
+    <a class="sub" href="/services/product-page-design">Product & landing page design</a>
+    <a class="sub" href="/services/store-setup">Store setup & theme customization</a>
+    <a class="sub" href="/services/order-fulfillment">Order fulfillment</a>
+    <a class="sub" href="/services/shopify-va">Full-time Shopify VA</a>
+    <a class="sub" href="/services/woocommerce-funnels">WooCommerce funnels</a>
+    <a href="/portfolio">Portfolio</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+  <div class="menu__cta">
+    <a class="pill pill--acid" data-link="whatsapp" href="/contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-1.5-1-2-2l1-1-1-2z" fill="currentColor"/></svg> Message on WhatsApp</a>
+    <a class="pill pill--line" data-link="email" href="/contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="2"/></svg> Email me</a>
+  </div>
+</div>
+<main id="main">
+<section class="wrap phero">
+  <p class="phero__crumbs meta"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/services">Services</a><span aria-hidden="true">/</span>Product page design</p>
+  <h1 class="h-xl">The page where <span class="mark">they decide to buy.</span></h1>
+  <div class="phero__grid">
+    <div class="stack">
+      <p class="lead">A weak product page wastes your ad budget. I design product and landing pages that build trust, work on mobile first and turn visitors into customers.</p>
+      <div class="cta">
+        <a class="pill pill--black" data-link="whatsapp" href="/contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-1.5-1-2-2l1-1-1-2z" fill="currentColor"/></svg> Message on WhatsApp</a>
+        <a class="pill pill--line" href="/portfolio">See the portfolio</a>
+      </div>
+    </div>
+    <ul class="chips" aria-label="At a glance"><li>Product pages</li><li>Landing pages</li><li>GemPages</li><li>PageFly</li><li>Shogun</li><li>Zipify</li><li>Mobile first</li></ul>
+  </div>
+</section>
+
+<section class="wrap sec--tight" aria-labelledby="anat">
+  <div class="split split--even" style="align-items:center">
+    <button class="anatomy" type="button" data-full="/img/work/pdp-cookware-set.webp" data-caption="Product page · 10-piece cookware set">
+      <img src="/img/work/pdp-cookware-set.webp" width="640" height="2942" alt="A product page Azgor built for a 10-piece ceramic cookware set" decoding="async">
+      <span class="pin" style="top:13%;left:13%">A</span>
+      <span class="pin" style="top:12.5%;left:50%">B</span>
+      <span class="pin" style="top:37%;left:50%">C</span>
+      <span class="pin" style="top:53%;left:50%">D</span>
+      <span class="pin" style="top:70%;left:3%">E</span>
+    </button>
+    <div class="stack stack--lg">
+      <h2 id="anat" class="bracket">Anatomy</h2>
+      <ol class="key">
+        <li><span class="pin">A</span><p><strong>Gallery.</strong> A big product image with thumbnails, zoom and video, showing the product from every angle.</p></li>
+        <li><span class="pin">B</span><p><strong>Trust and social proof.</strong> Star ratings and review counts from Loox, Judge.me or Okendo, plus payment, secure-checkout, free shipping and guarantee badges.</p></li>
+        <li><span class="pin">C</span><p><strong>Pricing that sells.</strong> Color swatches, a compare-at price against your price, pay-later instalments, and quantity breaks or bundles to raise order value.</p></li>
+        <li><span class="pin">D</span><p><strong>Clear buttons.</strong> Add to cart and Buy it now, sticky on mobile, with a “people recently added this” nudge above them.</p></li>
+        <li><span class="pin">E</span><p><strong>Content blocks.</strong> Tabs for highlights, specs, care and FAQs, comparison tables, benefit icons and video, with lazy-loaded images for speed.</p></li>
+      </ol>
+      <p class="note" style="margin:0"><span class="tag">His work</span> Tap the page to see it at full length.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap sec" id="results" aria-labelledby="res">
+  <div class="split">
+    <div class="stack">
+      <h2 id="res" class="bracket">Results</h2>
+      <p class="lead">One week of a client store, straight from its Shopify analytics, against the week before. Fewer visitors, far more buyers.</p>
+      <div class="dark" style="border-radius:24px;padding:14px">
+        <dl class="kpi">
+          <div><dt>Total sales</dt><dd>£209.95</dd><span class="d">+162%</span></div>
+          <div><dt>Orders</dt><dd>5</dd><span class="d">+400%</span></div>
+          <div><dt>Conversion</dt><dd>2.99%</dd><span class="d">+596%</span></div>
+          <div><dt>Checkout</dt><dd>12.69%</dd><span class="d">+639%</span></div>
+          <div><dt>Sessions</dt><dd>134</dd><span class="d d--down">−42%</span></div>
+          <div><dt>Avg. order</dt><dd>£40.40</dd><span class="d d--down">−50%</span></div>
+        </dl>
+      </div>
+      <p class="note" style="margin:0"><span class="tag">Real data</span> 14–20 Oct 2023. Store name hidden.</p>
+    </div>
+    <button class="shot" type="button" data-full="/img/proof/shopify-analytics.webp" data-caption="Shopify analytics, last 7 days vs previous period (store name hidden)"><img src="/img/proof/shopify-analytics.webp" width="1000" height="952" alt="Shopify analytics dashboard: total sales £209.95 up 162%, 134 sessions, 2.99% conversion rate, 5 orders, average order value £40.40" loading="lazy" decoding="async"></button>
+  </div>
+</section>
+<section class="dark sec">
+  <div class="wrap">
+    <div class="split" style="align-items:end">
+      <h2 class="bracket">Product pages</h2>
+      <p class="lead">Hover a page to scroll through it, or open it to see the full length.</p>
+    </div>
+    <ul class="wall ">
+    <li class="card" data-cat="pdp">
+      <button class="card__frame" type="button" data-full="/img/work/pdp-cookware-set.webp" data-caption="Ceramic cookware set · Product page, GemPages" aria-label="Open full page: Ceramic cookware set">
+        <img src="/img/work/pdp-cookware-set.webp" width="640" height="2942" alt="Ceramic cookware set: product page, gempages, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 12</span><span class="card__cat">Product page</span></p>
+      <p class="card__t">Ceramic cookware set</p>
+      <p class="card__s">Product page, GemPages</p>
+    </li>
+    <li class="card" data-cat="pdp">
+      <button class="card__frame" type="button" data-full="/img/work/pdp-sauna-shorts.webp" data-caption="Sauna sweat shorts · Product page, US store" aria-label="Open full page: Sauna sweat shorts">
+        <img src="/img/work/pdp-sauna-shorts.webp" width="640" height="5550" alt="Sauna sweat shorts: product page, us store, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 13</span><span class="card__cat">Product page</span></p>
+      <p class="card__t">Sauna sweat shorts</p>
+      <p class="card__s">Product page, US store</p>
+    </li>
+    <li class="card" data-cat="pdp">
+      <button class="card__frame" type="button" data-full="/img/work/pdp-montessori-puzzle.webp" data-caption="Montessori fraction puzzle · Product page with bundle offers" aria-label="Open full page: Montessori fraction puzzle">
+        <img src="/img/work/pdp-montessori-puzzle.webp" width="640" height="3724" alt="Montessori fraction puzzle: product page with bundle offers, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 14</span><span class="card__cat">Product page</span></p>
+      <p class="card__t">Montessori fraction puzzle</p>
+      <p class="card__s">Product page with bundle offers</p>
+    </li>
+    <li class="card" data-cat="pdp">
+      <button class="card__frame" type="button" data-full="/img/work/pdp-inflatable-tent.webp" data-caption="Inflatable tent · Product page, Dutch store" aria-label="Open full page: Inflatable tent">
+        <img src="/img/work/pdp-inflatable-tent.webp" width="640" height="2260" alt="Inflatable tent: product page, dutch store, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 15</span><span class="card__cat">Product page</span></p>
+      <p class="card__t">Inflatable tent</p>
+      <p class="card__s">Product page, Dutch store</p>
+    </li>
+    <li class="card" data-cat="pdp">
+      <button class="card__frame" type="button" data-full="/img/work/pdp-espresso-fr.webp" data-caption="Espresso machine · Product page, French store" aria-label="Open full page: Espresso machine">
+        <img src="/img/work/pdp-espresso-fr.webp" width="640" height="6400" alt="Espresso machine: product page, french store, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 16</span><span class="card__cat">Product page</span></p>
+      <p class="card__t">Espresso machine</p>
+      <p class="card__s">Product page, French store</p>
+    </li>
+    <li class="card" data-cat="pdp">
+      <button class="card__frame" type="button" data-full="/img/work/pdp-coffee-machine.webp" data-caption="Coffee machine · Product page, Australian store" aria-label="Open full page: Coffee machine">
+        <img src="/img/work/pdp-coffee-machine.webp" width="640" height="6400" alt="Coffee machine: product page, australian store, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 17</span><span class="card__cat">Product page</span></p>
+      <p class="card__t">Coffee machine</p>
+      <p class="card__s">Product page, Australian store</p>
+    </li>
+    <li class="card" data-cat="pdp">
+      <button class="card__frame" type="button" data-full="/img/work/pdp-ems-massager.webp" data-caption="EMS face massager · Product page, GemPages" aria-label="Open full page: EMS face massager">
+        <img src="/img/work/pdp-ems-massager.webp" width="640" height="2188" alt="EMS face massager: product page, gempages, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 18</span><span class="card__cat">Product page</span></p>
+      <p class="card__t">EMS face massager</p>
+      <p class="card__s">Product page, GemPages</p>
+    </li>
+    <li class="card" data-cat="pdp">
+      <button class="card__frame" type="button" data-full="/img/work/pdp-skindion.webp" data-caption="Skindion Rosa · Product page, Spanish store" aria-label="Open full page: Skindion Rosa">
+        <img src="/img/work/pdp-skindion.webp" width="640" height="3678" alt="Skindion Rosa: product page, spanish store, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 19</span><span class="card__cat">Product page</span></p>
+      <p class="card__t">Skindion Rosa</p>
+      <p class="card__s">Product page, Spanish store</p>
+    </li>
+    <li class="card" data-cat="pdp">
+      <button class="card__frame" type="button" data-full="/img/work/pdp-swivel-tap.webp" data-caption="Swivel tap extender · Product page, German store" aria-label="Open full page: Swivel tap extender">
+        <img src="/img/work/pdp-swivel-tap.webp" width="640" height="2842" alt="Swivel tap extender: product page, german store, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 20</span><span class="card__cat">Product page</span></p>
+      <p class="card__t">Swivel tap extender</p>
+      <p class="card__s">Product page, German store</p>
+    </li>
+    <li class="card" data-cat="pdp">
+      <button class="card__frame" type="button" data-full="/img/work/pdp-led-mask.webp" data-caption="LED face mask · Product page, Dutch store" aria-label="Open full page: LED face mask">
+        <img src="/img/work/pdp-led-mask.webp" width="640" height="2094" alt="LED face mask: product page, dutch store, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 21</span><span class="card__cat">Product page</span></p>
+      <p class="card__t">LED face mask</p>
+      <p class="card__s">Product page, Dutch store</p>
+    </li>
+    <li class="card" data-cat="pdp">
+      <button class="card__frame" type="button" data-full="/img/work/pdp-pure-skin.webp" data-caption="Pure Skin · Store homepage and product grid" aria-label="Open full page: Pure Skin">
+        <img src="/img/work/pdp-pure-skin.webp" width="640" height="1862" alt="Pure Skin: store homepage and product grid, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 22</span><span class="card__cat">Product page</span></p>
+      <p class="card__t">Pure Skin</p>
+      <p class="card__s">Store homepage and product grid</p>
+    </li>
+    <li class="card" data-cat="pdp">
+      <button class="card__frame" type="button" data-full="/img/work/pdp-infinity-hoop.webp" data-caption="Infinity Hoop Plus · One product page" aria-label="Open full page: Infinity Hoop Plus">
+        <img src="/img/work/pdp-infinity-hoop.webp" width="640" height="1058" alt="Infinity Hoop Plus: one product page, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 23</span><span class="card__cat">Product page</span></p>
+      <p class="card__t">Infinity Hoop Plus</p>
+      <p class="card__s">One product page</p>
+    </li>
+  </ul>
+  </div>
+</section>
+<section class="dark sec">
+  <div class="wrap">
+    <div class="split" style="align-items:end">
+      <h2 class="bracket">Landing pages</h2>
+      <p class="lead">Hover a page to scroll through it, or open it to see the full length.</p>
+    </div>
+    <ul class="wall ">
+    <li class="card" data-cat="lp">
+      <button class="card__frame" type="button" data-full="/img/work/lp-nut-milk-maker.webp" data-caption="Nut milk maker · Landing page" aria-label="Open full page: Nut milk maker">
+        <img src="/img/work/lp-nut-milk-maker.webp" width="640" height="4014" alt="Nut milk maker: landing page, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 24</span><span class="card__cat">Landing page</span></p>
+      <p class="card__t">Nut milk maker</p>
+      <p class="card__s">Landing page</p>
+    </li>
+    <li class="card" data-cat="lp">
+      <button class="card__frame" type="button" data-full="/img/work/lp-headlamp.webp" data-caption="USB headlamp · Landing page" aria-label="Open full page: USB headlamp">
+        <img src="/img/work/lp-headlamp.webp" width="640" height="4860" alt="USB headlamp: landing page, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 25</span><span class="card__cat">Landing page</span></p>
+      <p class="card__t">USB headlamp</p>
+      <p class="card__s">Landing page</p>
+    </li>
+    <li class="card" data-cat="lp">
+      <button class="card__frame" type="button" data-full="/img/work/lp-smart-faucet.webp" data-caption="Smart display faucet · Landing page" aria-label="Open full page: Smart display faucet">
+        <img src="/img/work/lp-smart-faucet.webp" width="640" height="3686" alt="Smart display faucet: landing page, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 26</span><span class="card__cat">Landing page</span></p>
+      <p class="card__t">Smart display faucet</p>
+      <p class="card__s">Landing page</p>
+    </li>
+    <li class="card" data-cat="lp">
+      <button class="card__frame" type="button" data-full="/img/work/lp-belly-pro.webp" data-caption="Belly Pro · Maternity landing page" aria-label="Open full page: Belly Pro">
+        <img src="/img/work/lp-belly-pro.webp" width="640" height="5086" alt="Belly Pro: maternity landing page, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 27</span><span class="card__cat">Landing page</span></p>
+      <p class="card__t">Belly Pro</p>
+      <p class="card__s">Maternity landing page</p>
+    </li>
+    <li class="card" data-cat="lp">
+      <button class="card__frame" type="button" data-full="/img/work/lp-mini-printer.webp" data-caption="Mini thermal printer · Landing page" aria-label="Open full page: Mini thermal printer">
+        <img src="/img/work/lp-mini-printer.webp" width="640" height="4474" alt="Mini thermal printer: landing page, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 28</span><span class="card__cat">Landing page</span></p>
+      <p class="card__t">Mini thermal printer</p>
+      <p class="card__s">Landing page</p>
+    </li>
+    <li class="card" data-cat="lp">
+      <button class="card__frame" type="button" data-full="/img/work/lp-valari-pillow.webp" data-caption="Valari pillow · Landing page" aria-label="Open full page: Valari pillow">
+        <img src="/img/work/lp-valari-pillow.webp" width="640" height="4272" alt="Valari pillow: landing page, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 29</span><span class="card__cat">Landing page</span></p>
+      <p class="card__t">Valari pillow</p>
+      <p class="card__s">Landing page</p>
+    </li>
+    <li class="card" data-cat="lp">
+      <button class="card__frame" type="button" data-full="/img/work/lp-gesture-car.webp" data-caption="Gesture sensing car · Landing page" aria-label="Open full page: Gesture sensing car">
+        <img src="/img/work/lp-gesture-car.webp" width="640" height="3354" alt="Gesture sensing car: landing page, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 30</span><span class="card__cat">Landing page</span></p>
+      <p class="card__t">Gesture sensing car</p>
+      <p class="card__s">Landing page</p>
+    </li>
+    <li class="card" data-cat="lp">
+      <button class="card__frame" type="button" data-full="/img/work/lp-nutrition-hubb.webp" data-caption="Nutrition Hubb · Supplement store homepage" aria-label="Open full page: Nutrition Hubb">
+        <img src="/img/work/lp-nutrition-hubb.webp" width="640" height="4144" alt="Nutrition Hubb: supplement store homepage, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 31</span><span class="card__cat">Landing page</span></p>
+      <p class="card__t">Nutrition Hubb</p>
+      <p class="card__s">Supplement store homepage</p>
+    </li>
+    <li class="card" data-cat="lp">
+      <button class="card__frame" type="button" data-full="/img/work/lp-bamboo-pillowcase.webp" data-caption="BambuDream pillowcase · Landing page" aria-label="Open full page: BambuDream pillowcase">
+        <img src="/img/work/lp-bamboo-pillowcase.webp" width="640" height="5008" alt="BambuDream pillowcase: landing page, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 32</span><span class="card__cat">Landing page</span></p>
+      <p class="card__t">BambuDream pillowcase</p>
+      <p class="card__s">Landing page</p>
+    </li>
+    <li class="card" data-cat="lp">
+      <button class="card__frame" type="button" data-full="/img/work/lp-neck-device.webp" data-caption="EMS neck device · Landing page" aria-label="Open full page: EMS neck device">
+        <img src="/img/work/lp-neck-device.webp" width="640" height="3124" alt="EMS neck device: landing page, built by Azgor" loading="lazy" decoding="async">
+      </button>
+      <p class="card__meta meta"><span>No. 33</span><span class="card__cat">Landing page</span></p>
+      <p class="card__t">EMS neck device</p>
+      <p class="card__s">Landing page</p>
+    </li>
+  </ul>
+  </div>
+</section>
+<section class="wrap sec--tight">
+  <a class="next" href="/services/store-setup"><span class="stack" style="gap:10px"><span class="meta muted">Next service</span><b>Store setup & theme</b></span><span class="row__go" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+</section>
+</main>
+<section class="dark" aria-labelledby="closer-title">
+  <div class="wrap closer">
+    <h2 id="closer-title" class="closer__big">Let’s build <em>your store.</em></h2>
+    <div class="closer__row">
+      <p class="lead">Tell me about your store and what you need, and I’ll get back to you with a plan.</p>
+      <div class="cta">
+        <a class="pill pill--acid" data-link="whatsapp" href="/contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-1.5-1-2-2l1-1-1-2z" fill="currentColor"/></svg> Message on WhatsApp</a>
+        <a class="pill pill--line" data-link="email" href="/contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="2"/></svg> Email me</a>
+      </div>
+    </div>
+  </div>
+  <footer class="wrap foot">
+    <div class="foot__grid">
+      <div class="stack">
+        <a class="nav__brand" style="opacity:1;transform:none" href="/">Azgor [Hossin]</a>
+        <p class="muted" style="margin:0;color:var(--on-black-2)">Shopify dropshipping &amp; e-commerce specialist. Remote, working worldwide.</p>
+      </div>
+      <div><h3>Services</h3><ul><li><a href="/services/product-research">Product research</a></li><li><a href="/services/product-listing">Listings & descriptions</a></li><li><a href="/services/product-page-design">Product page design</a></li><li><a href="/services/store-setup">Store setup & theme</a></li></ul></div>
+      <div><h3>More</h3><ul><li><a href="/services/order-fulfillment">Order fulfillment</a></li><li><a href="/services/shopify-va">Full-time Shopify VA</a></li><li><a href="/services/woocommerce-funnels">WooCommerce funnels</a></li><li><a href="/portfolio">Portfolio</a></li></ul></div>
+      <div><h3>Contact</h3><ul><li><a data-link="whatsapp" href="/contact">WhatsApp</a></li><li><a data-link="email" href="/contact">Email</a></li><li><a data-link="fiverr" href="/contact">Fiverr</a></li><li><a data-link="upwork" href="/contact">Upwork</a></li></ul></div>
+    </div>
+    <div class="foot__small">
+      <p>© <span data-year>2026</span> Azgor Hossin. Independent freelancer. Shopify, WooCommerce and other names are trademarks of their owners; no affiliation is implied. Portfolio screenshots show stores he worked on for clients.</p>
+      <a href="#main">Back to top</a>
+    </div>
+  </footer>
+</section>
+<dialog class="viewer" id="viewer" aria-label="Full page view">
+  <div class="viewer__bar">
+    <p class="viewer__cap meta" id="viewer-cap"></p>
+    <div class="viewer__ctl">
+      <button type="button" class="viewer__btn" data-step="-1" aria-label="Previous"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5"/></svg></button>
+      <button type="button" class="viewer__btn" data-step="1" aria-label="Next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5"/></svg></button>
+      <button type="button" class="viewer__btn viewer__btn--close" data-close aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.5"/></svg></button>
+    </div>
+  </div>
+  <div class="viewer__scroll" id="viewer-scroll"></div>
+</dialog>
+<script src="/script.js" defer></script>
+</body>
+</html>
