@@ -35,7 +35,7 @@ Source copy: Google Doc "Shopify Dropshipping & E-Commerce Services" (1foHfrIIW_
 
 ## Brand Commitments
 
-Name: Azgor Hossin. No logo, photo or palette supplied.
+Name: Azgor Hossin. No logo or photo (confirmed: no portrait). Binding visual references from the user: layout after alejandroha.com, palette after silviamalavasi.com. Separate page per service.
 
 ## Evidence on Hand
 
