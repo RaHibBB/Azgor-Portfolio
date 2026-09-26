@@ -447,7 +447,7 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1.5
 .swap__row + .swap__row { border-top: 2px solid var(--ink); }
 .swap__label {
   padding: 16px 12px; font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
-  border-right: 2px solid var(--ink); background: var(--paper-shade);
+  box-shadow: inset -2px 0 0 var(--ink); background: var(--paper-shade);
 }
 .swap__label--after { background: var(--canary); }
 .swap__before { padding: 14px 16px; color: var(--ink-soft); text-decoration: line-through; text-decoration-color: var(--pink); text-decoration-thickness: 2px; line-height: 1.45; }
@@ -674,7 +674,7 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1.5
   .pdp__main { aspect-ratio: 16 / 10; }
   .stubs { grid-template-columns: 1fr; }
   .swap__row { grid-template-columns: 1fr; }
-  .swap__label { border-right: 0; border-bottom: 2px solid var(--ink); padding: 8px 12px; }
+  .swap__label { box-shadow: inset 0 -2px 0 var(--ink); padding: 8px 12px; }
   .r-lines li { grid-template-columns: 1fr; gap: 2px; padding: 9px 0; border-bottom: 1px solid var(--rule); }
   .r-lines li:last-child { border-bottom: 0; }
   .r-lines .l { display: none; }
