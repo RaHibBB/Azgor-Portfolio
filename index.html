@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Azgor Hossin — Shopify Dropshipping Specialist</title>
+  <meta name="description" content="Azgor Hossin is a freelance Shopify dropshipping specialist: product research, product listing and SEO, product page design, theme customization, order fulfillment automation and full-time store VA work.">
+  <meta name="theme-color" content="#2233e0">
+  <meta property="og:title" content="Azgor Hossin — Shopify Dropshipping Specialist">
+  <meta property="og:description" content="Product research, listing, page design, fulfillment automation and full-time VA work for Shopify stores.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Martian+Mono:wdth,wght@75..112.5,100..800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<!--
+THESIS: The whole page is one long store receipt feeding out of a printer onto a cash-register-blue counter; every service is a line item. Refuses the dark gradient hero + icon-card grid every Shopify freelancer ships.
+OWN-WORLD: Drenched ultramarine counter, cool thermal-white paper, near-black thermal ink, canary and carbon-pink copy sheets. Martian Mono for everything printed, Archivo condensed black for what is stamped on the counter. Perforations, torn teeth, barcodes, dotted leaders.
+STORY: A store owner sees one person covering research, listing, page design, fulfillment and daily running; reads the actual deliverables (research sheet, before/after title, page anatomy, shipping timeline, VA shift log); messages him on WhatsApp.
+FIRST VIEWPORT: Left, huge condensed headline on blue with WhatsApp (canary) and Email buttons. Right, a printer bar with the order receipt printing out: services as clickable line items, 200+ stores total, barcode.
+FORM: Thermal order receipt, #6 on the ordered list; seed key 5c66db7f.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+
+<a class="skip" href="#research">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top" aria-label="Azgor Hossin, back to top">
+      <svg class="nav__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 3h18v26l-3-2-3 2-3-2-3 2-3-2-3 2z" fill="currentColor"/><path d="M11 10h10M11 14h10M11 18h6" stroke="#2233e0" stroke-width="2"/></svg>
+      <span>Azgor Hossin</span>
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#listing">Listing</a>
+      <a href="#page-design">Page design</a>
+      <a href="#fulfillment">Fulfillment</a>
+      <a href="#va">Full-time VA</a>
+    </nav>
+    <a class="btn btn--stub" href="#contact">Hire me</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="leg leg--hero" aria-labelledby="hero-title">
+    <div class="leg__head leg__head--hero">
+      <h1 id="hero-title" class="display">Your Shopify store, handled end to end.</h1>
+      <p class="lede">I’m Azgor Hossin. I find the products, list them, design the pages they sell on, automate the orders, and run the store day to day, so you can spend your time on marketing.</p>
+      <div class="cta">
+        <a class="btn btn--primary" data-link="whatsapp" href="#contact">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-1.5-1-2-2l1-1-1-2z" fill="currentColor"/></svg>
+          Message on WhatsApp
+        </a>
+        <a class="btn btn--ghost" data-link="email" href="#contact">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 6l8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          Email me
+        </a>
+      </div>
+      <p class="cta__alt">Prefer a marketplace? Hire me on <a data-link="fiverr" href="#contact">Fiverr</a> or <a data-link="upwork" href="#contact">Upwork</a>.</p>
+    </div>
+
+    <div class="roll">
+      <div class="printer" aria-hidden="true"><span class="printer__slot"></span><span class="printer__led"></span></div>
+      <article class="seg seg--first" aria-label="Order summary of services">
+        <div class="print">
+          <p class="r-center r-big print-line">AZGOR HOSSIN</p>
+          <p class="r-center r-small print-line">Shopify dropshipping &amp; e-commerce</p>
+          <p class="r-center r-small print-line">Freelance · Remote · Worldwide</p>
+          <hr class="r-rule print-line">
+          <dl class="r-meta print-line">
+            <div><dt>Order</dt><dd>#AZ-0200+</dd></div>
+            <div><dt>Date</dt><dd data-today>—</dd></div>
+            <div><dt>Served by</dt><dd>Azgor</dd></div>
+          </dl>
+          <hr class="r-rule print-line">
+          <ol class="r-items">
+            <li class="print-line"><a href="#research"><span class="q">1</span><span class="i">Product research</span><span class="l"></span><span class="v">Sheet</span></a></li>
+            <li class="print-line"><a href="#listing"><span class="q">1</span><span class="i">Product listing + SEO</span><span class="l"></span><span class="v">Catalog</span></a></li>
+            <li class="print-line"><a href="#page-design"><span class="q">1</span><span class="i">Product page design</span><span class="l"></span><span class="v">Page</span></a></li>
+            <li class="print-line"><a href="#setup"><span class="q">1</span><span class="i">Store setup + theme</span><span class="l"></span><span class="v">Store</span></a></li>
+            <li class="print-line"><a href="#fulfillment"><span class="q">1</span><span class="i">Order fulfillment</span><span class="l"></span><span class="v">Automated</span></a></li>
+            <li class="print-line"><a href="#va"><span class="q">1</span><span class="i">Full-time Shopify VA</span><span class="l"></span><span class="v">Daily</span></a></li>
+            <li class="print-line"><a href="#funnels"><span class="q">1</span><span class="i">WooCommerce funnels</span><span class="l"></span><span class="v">Funnel</span></a></li>
+          </ol>
+          <hr class="r-rule print-line">
+          <dl class="r-totals print-line">
+            <div><dt>Stores worked on</dt><dd>200+</dd></div>
+            <div><dt>Years on Shopify</dt><dd>2+</dd></div>
+          </dl>
+          <hr class="r-rule r-rule--double print-line">
+          <p class="r-grand print-line"><span>Total</span><span>One store, handled</span></p>
+          <div class="barcode print-line" data-barcode="AZ-0200" aria-hidden="true"></div>
+          <p class="r-center r-small print-line">Tap any line to see what’s included</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= RESEARCH ================= -->
+  <section class="leg" id="research" aria-labelledby="research-title">
+    <div class="leg__head">
+      <h2 id="research-title" class="display display--md">Products worth selling, before you spend on ads.</h2>
+      <p>Research decides everything after it. A good product finds its own customers and saves you promotion money. I’ve researched products for 200+ stores over the last 2 years.</p>
+    </div>
+    <div class="roll">
+      <article class="seg">
+        <div class="perf" aria-hidden="true"></div>
+        <h3 class="r-heading">Product research · 4 kinds</h3>
+        <ul class="r-list">
+          <li><strong>Current winning products</strong><span>Products customers already want, picked from Facebook ads that are getting strong responses.</span></li>
+          <li><strong>New untapped products</strong><span>Unique products your competitors haven’t found yet, each with its selling point.</span></li>
+          <li><strong>In-trend products</strong><span>How popular a product is right now on Google Trends, with its ranking and monthly search volume.</span></li>
+          <li><strong>Upcoming-trend products</strong><span>Products that should trend in the coming months, judged from their ranking chart over past months.</span></li>
+        </ul>
+
+        <h3 class="r-heading">Your research sheet</h3>
+        <p class="r-note">Every product comes with the numbers you need to decide:</p>
+        <ul class="r-chips">
+          <li>Product name</li><li>AliExpress link</li><li>AliExpress price</li><li>Ali orders</li><li>Ali rating</li><li>Profit margin</li><li>Profit markup</li><li>FB ad link</li><li>Competitor link</li><li>Competitor price</li><li>Google Trends</li><li>Monthly search volume</li>
+        </ul>
+
+        <figure class="sheet">
+          <figcaption><span>Sample rows</span><span class="tag tag--pink">Example data, not real results</span></figcaption>
+          <div class="sheet__scroll" tabindex="0" role="region" aria-label="Sample research sheet, scrolls sideways">
+            <table>
+              <thead>
+                <tr><th scope="col">Product</th><th scope="col">Ali price</th><th scope="col">Sell at</th><th scope="col">Margin</th><th scope="col">Ali orders</th><th scope="col">Rating</th><th scope="col">Trend</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Neck &amp; shoulder massager</th><td>$11.40</td><td>$34.99</td><td>67%</td><td>12.4k</td><td>4.8</td><td><span class="trend trend--up">Rising</span></td></tr>
+                <tr><th scope="row">Magnetic car phone mount</th><td>$3.20</td><td>$17.99</td><td>82%</td><td>30.1k</td><td>4.7</td><td><span class="trend">Steady</span></td></tr>
+                <tr><th scope="row">Pet hair remover roller</th><td>$2.85</td><td>$14.95</td><td>81%</td><td>51.8k</td><td>4.8</td><td><span class="trend">Steady</span></td></tr>
+                <tr><th scope="row">LED sunset lamp</th><td>$6.10</td><td>$24.99</td><td>76%</td><td>8.9k</td><td>4.6</td><td><span class="trend trend--season">Seasonal</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </figure>
+
+        <p class="r-tools"><span>Tools</span> AdSpy · Dropispy · BigSpy · Drop Point · Ecomhunt · AdHunter · AliShark · Google Trends</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= LISTING ================= -->
+  <section class="leg" id="listing" aria-labelledby="listing-title">
+    <div class="leg__head">
+      <h2 id="listing-title" class="display display--md">Supplier data in. Sell-ready listings out.</h2>
+      <p>A great store only converts if the products look professional. I take raw supplier data and turn it into clean, SEO-ready product pages.</p>
+    </div>
+    <div class="roll">
+      <article class="seg">
+        <div class="perf" aria-hidden="true"></div>
+        <h3 class="r-heading">One product title, before and after</h3>
+        <div class="swap">
+          <div class="swap__row">
+            <span class="swap__label">Supplier</span>
+            <p class="swap__before">2024 New Hot Sale Magnetic Car Phone Holder Universal 360 Rotation Strong Magnet Mount For iPhone Samsung Xiaomi</p>
+          </div>
+          <div class="swap__row">
+            <span class="swap__label swap__label--after">Your store</span>
+            <p class="swap__after">MagGrip 360 Magnetic Car Phone Mount</p>
+          </div>
+          <p class="swap__foot"><span class="tag">Example</span> Keyword in the title, brand voice in the copy, benefits in short bullets.</p>
+        </div>
+
+        <h3 class="r-heading">What’s included</h3>
+        <dl class="r-groups">
+          <div>
+            <dt>Uploads</dt>
+            <dd>Single or bulk uploads, by CSV or through DSers, CJdropshipping, AutoDS or Zendrop.</dd>
+            <dd>Color, size, material and bundle variants, each mapped to the right image.</dd>
+            <dd>Products sorted into automated or manual collections, with tags for easy navigation.</dd>
+          </div>
+          <div>
+            <dt>Descriptions</dt>
+            <dd>Clear, persuasive product copy written in your brand voice.</dd>
+            <dd>Search keywords in titles, descriptions and meta tags for Google.</dd>
+            <dd>Key benefits and specs as easy-to-read bullet points.</dd>
+          </div>
+          <div>
+            <dt>Images</dt>
+            <dd>Supplier logos, Chinese text and watermarks removed.</dd>
+            <dd>Cropped and resized to one clean aspect ratio across the store.</dd>
+            <dd>Compressed without losing quality, so pages stay fast.</dd>
+          </div>
+          <div>
+            <dt>Price &amp; stock</dt>
+            <dd>Profit margins, compare-at prices and currency settings.</dd>
+            <dd>Correct SKUs and real-time inventory tracking, so you never oversell.</dd>
+            <dd>Weights and dimensions set for automatic shipping rates.</dd>
+          </div>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= PAGE DESIGN ================= -->
+  <section class="leg" id="page-design" aria-labelledby="page-title">
+    <div class="leg__head">
+      <h2 id="page-title" class="display display--md">The page where they decide to buy.</h2>
+      <p>A weak product page wastes your ad budget. I design product pages that build trust, work on mobile first, and turn visitors into customers.</p>
+    </div>
+    <div class="roll">
+      <article class="seg">
+        <div class="perf" aria-hidden="true"></div>
+        <h3 class="r-heading">Anatomy of a product page</h3>
+        <figure class="anatomy">
+          <div class="pdp" aria-hidden="true">
+            <div class="pdp__gallery">
+              <div class="pdp__main">
+                <svg viewBox="0 0 120 120"><rect x="38" y="16" width="44" height="78" rx="8" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="60" cy="100" r="10" fill="none" stroke="currentColor" stroke-width="3"/><path d="M60 94v-6M46 110h28" stroke="currentColor" stroke-width="3"/><path d="M48 30h24" stroke="currentColor" stroke-width="3"/></svg>
+                <span class="pin" style="top:10px;left:10px">A</span>
+              </div>
+              <div class="pdp__thumbs"><i></i><i></i><i></i><i></i><span class="pin pin--inline">E</span></div>
+            </div>
+            <div class="pdp__info">
+              <p class="pdp__title">MagGrip 360 Car Phone Mount</p>
+              <p class="pdp__stars"><span class="stars" style="--r:4.8"></span> 4.8 · 1,204 reviews <span class="pin pin--inline">B</span></p>
+              <p class="pdp__price"><b>$17.99</b> <s>$29.99</s> <em>Save 40%</em></p>
+              <div class="pdp__swatches"><i style="--c:#16161a"></i><i style="--c:#c7c9d1"></i><i style="--c:#ff6fa0"></i></div>
+              <span class="pdp__atc">Add to cart <span class="pin pin--inline">A</span></span>
+              <p class="pdp__trust">Free shipping · 30-day money-back guarantee</p>
+              <div class="pdp__acc"><span>Specifications</span><span>Shipping &amp; returns</span><span>FAQ <span class="pin pin--inline">C</span></span></div>
+              <div class="pdp__fbt">Frequently bought together <span class="pin pin--inline">D</span></div>
+            </div>
+          </div>
+          <figcaption class="tag">Illustration</figcaption>
+        </figure>
+        <ol class="r-key">
+          <li><span class="pin">A</span><p><strong>Above the fold.</strong> Image and video gallery with zoom, bold price with compare-at discount, color swatches, and a sticky add-to-cart bar on mobile.</p></li>
+          <li><span class="pin">B</span><p><strong>Trust and social proof.</strong> Loox, Judge.me or Okendo reviews with photos, payment and secure-checkout badges, free shipping and guarantee badges.</p></li>
+          <li><span class="pin">C</span><p><strong>Content blocks.</strong> Collapsible tabs for specs, shipping and FAQs, comparison tables, benefit icons, and customer or promo video.</p></li>
+          <li><span class="pin">D</span><p><strong>Upsells.</strong> Frequently bought together bundles and “Buy 2, get 10% off” quantity breaks to raise your average order value.</p></li>
+          <li><span class="pin">E</span><p><strong>Mobile and speed.</strong> Buttons, images and text laid out for thumbs, with lazy-loaded images and lean scripts for fast loading.</p></li>
+        </ol>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= SETUP + THEME ================= -->
+  <section class="leg" id="setup" aria-labelledby="setup-title">
+    <div class="leg__head">
+      <h2 id="setup-title" class="display display--md">A store built around your brand, not a default theme.</h2>
+      <p>From an empty Shopify account to a store that’s ready to take orders, or a redesign of the one you already have.</p>
+    </div>
+    <div class="roll">
+      <article class="seg">
+        <div class="perf" aria-hidden="true"></div>
+        <h3 class="r-heading">Store setup</h3>
+        <ul class="r-lines">
+          <li><span class="i">Store creation or redesign</span><span class="l"></span><span class="v">Layout, navigation, mobile</span></li>
+          <li><span class="i">Product catalog</span><span class="l"></span><span class="v">Collections, variants, stock</span></li>
+          <li><span class="i">Policy pages</span><span class="l"></span><span class="v">Privacy, terms, refund, shipping FAQ</span></li>
+          <li><span class="i">Payments</span><span class="l"></span><span class="v">Shopify Payments, PayPal, Stripe</span></li>
+          <li><span class="i">Shipping</span><span class="l"></span><span class="v">Zones and automatic rates</span></li>
+          <li><span class="i">Logo and branding</span><span class="l"></span><span class="v">Logo, banners, colors, guidelines</span></li>
+          <li><span class="i">Packaging</span><span class="l"></span><span class="v">Inserts, stickers, boxes, tags</span></li>
+        </ul>
+
+        <h3 class="r-heading">Theme customization</h3>
+        <ul class="r-list">
+          <li><strong>Layout</strong><span>Homepage sections, product grids, collection pages and landing pages, rebuilt in the theme editor and Liquid.</span></li>
+          <li><strong>Header and footer</strong><span>Mega menus, sticky headers, currency selectors and clear footer links.</span></li>
+          <li><strong>Brand styling</strong><span>Your fonts, colors, button styles and graphics, applied across the whole theme.</span></li>
+          <li><strong>Homepage</strong><span>Hero banners and sliders with strong calls to action, featured collection carousels, brand story and testimonial sections.</span></li>
+          <li><strong>Apps and cart drawer</strong><span>Reviews, search, wishlist and popups styled to match, plus a slide-out cart with a free-shipping progress bar and upsells.</span></li>
+          <li><strong>Mobile and speed</strong><span>Tested on Chrome, Safari, Firefox and Edge, iOS and Android, with heavy scripts and unused code cleaned out.</span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= FULFILLMENT ================= -->
+  <section class="leg" id="fulfillment" aria-labelledby="fulfillment-title">
+    <div class="leg__head">
+      <h2 id="fulfillment-title" class="display display--md">Orders that ship themselves.</h2>
+      <p>Fast, accurate fulfillment keeps customers happy, cuts refund requests and keeps your payment gateways healthy. I connect your store, your suppliers and your customers.</p>
+    </div>
+    <div class="roll">
+      <article class="seg">
+        <div class="perf" aria-hidden="true"></div>
+        <h3 class="r-heading">Tracking · one order’s journey</h3>
+        <ol class="track">
+          <li class="is-done"><b>Order placed</b><span>A customer checks out on your store.</span></li>
+          <li class="is-done"><b>Sent to supplier</b><span>The order forwards automatically through DSers, AutoDS, CJdropshipping, Zendrop, Spocket or AliExpress.</span></li>
+          <li class="is-now"><b>Shipped</b><span>The tracking number syncs back to Shopify as soon as it ships.</span></li>
+          <li><b>Customer updated</b><span>Automatic email and SMS updates, plus a tracking page in your menu with 17TRACK, ParcelPanel or AfterShip.</span></li>
+          <li><b>Delivered</b><span>And if something goes wrong, I handle it: see below.</span></li>
+        </ol>
+
+        <h3 class="r-heading">Also handled</h3>
+        <ul class="r-lines">
+          <li><span class="i">Bulk and special orders</span><span class="l"></span><span class="v">Custom packaging, customer notes</span></li>
+          <li><span class="i">Stock sync</span><span class="l"></span><span class="v">Out-of-stock updates instantly</span></li>
+          <li><span class="i">Price monitoring</span><span class="l"></span><span class="v">Supplier changes, margin kept</span></li>
+          <li><span class="i">Failed orders</span><span class="l"></span><span class="v">Address and payment issues fixed</span></li>
+          <li><span class="i">Returns and refunds</span><span class="l"></span><span class="v">Lost or damaged, sorted with suppliers</span></li>
+          <li><span class="i">Private agent sourcing</span><span class="l"></span><span class="v">Factory prices, samples, thank-you notes</span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= VA ================= -->
+  <section class="leg" id="va" aria-labelledby="va-title">
+    <div class="leg__head">
+      <h2 id="va-title" class="display display--md">A full-time VA for your store.</h2>
+      <p>I run the day-to-day: orders, stock, customers and updates. You get your time back for marketing and scaling, and a report every day.</p>
+    </div>
+    <div class="roll">
+      <article class="seg seg--carbon">
+        <div class="perf" aria-hidden="true"></div>
+        <h3 class="r-heading">Shift log · a sample day</h3>
+        <ol class="log">
+          <li><time>09:00</time><span>Process overnight orders and check every tracking number synced.</span></li>
+          <li><time>10:30</time><span>Answer customer emails, live chat and “Where is my order?” tickets.</span></li>
+          <li><time>12:00</time><span>Check supplier stock and prices, update anything out of stock.</span></li>
+          <li><time>14:00</time><span>Upload new products, update collections and fix formatting.</span></li>
+          <li><time>15:30</time><span>Approve new customer reviews in Loox or Judge.me.</span></li>
+          <li><time>16:30</time><span>Schedule posts and reels for Facebook, Instagram and TikTok.</span></li>
+          <li><time>17:30</time><span>Send you the daily report.</span></li>
+        </ol>
+        <p class="r-note r-note--center"><span class="tag">Example schedule</span></p>
+
+        <h3 class="r-heading">Every day includes</h3>
+        <dl class="r-groups">
+          <div>
+            <dt>Store operations</dt>
+            <dd>Order fulfillment and tracking, inventory and price checks, catalog maintenance.</dd>
+          </div>
+          <div>
+            <dt>Customer support</dt>
+            <dd>Emails, live chat and contact forms, order status questions, returns, refunds and disputes under your store policy.</dd>
+          </div>
+          <div>
+            <dt>Store updates</dt>
+            <dd>Seasonal banners and sale graphics, product description edits, app clean-up so popups, reviews and upsells keep working.</dd>
+          </div>
+          <div>
+            <dt>Marketing support</dt>
+            <dd>Review moderation, social media posting and comments, a watch on ad campaigns and abandoned-cart emails.</dd>
+          </div>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= FUNNELS ================= -->
+  <section class="leg" id="funnels" aria-labelledby="funnels-title">
+    <div class="leg__head">
+      <h2 id="funnels-title" class="display display--md">On WooCommerce? I build funnels there too.</h2>
+      <p>Custom product pages and sales funnels with Elementor, paired with CartFlows or FunnelKit, instead of a generic store layout.</p>
+    </div>
+    <div class="roll">
+      <article class="seg">
+        <div class="perf" aria-hidden="true"></div>
+        <h3 class="r-heading">CartFlows or FunnelKit?</h3>
+        <div class="sheet__scroll" tabindex="0" role="region" aria-label="CartFlows and FunnelKit comparison">
+          <table class="compare">
+            <thead><tr><th scope="col"><span class="sr">Feature</span></th><th scope="col">CartFlows</th><th scope="col">FunnelKit</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Best for</th><td>Visual funnels and checkout</td><td>Funnels plus automation and CRM</td></tr>
+              <tr><th scope="row">Elementor</th><td>Widgets for each step</td><td>Native widgets and templates</td></tr>
+              <tr><th scope="row">Bumps and upsells</th><td>One-click upsells</td><td>Rule-based dynamic upsells</td></tr>
+              <tr><th scope="row">Cart</th><td>Embedded checkout</td><td>Slide-out cart drawer</td></tr>
+              <tr><th scope="row">Automation</th><td>Basic follow-ups</td><td>Abandoned cart, post-purchase flows</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="r-heading">What you get</h3>
+        <ul class="r-lines">
+          <li><span class="i">Landing pages</span><span class="l"></span><span class="v">Your brand, sticky Buy Now</span></li>
+          <li><span class="i">Checkout</span><span class="l"></span><span class="v">1 or 2 steps, Stripe, PayPal, Apple Pay</span></li>
+          <li><span class="i">Order bumps</span><span class="l"></span><span class="v">Add-ons before payment</span></li>
+          <li><span class="i">One-click upsells</span><span class="l"></span><span class="v">Offers after checkout</span></li>
+          <li><span class="i">Thank-you pages</span><span class="l"></span><span class="v">Confirmation and cross-sells</span></li>
+          <li><span class="i">A/B tests</span><span class="l"></span><span class="v">Headlines, layouts, prices</span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="leg" id="contact" aria-labelledby="contact-title">
+    <div class="leg__head">
+      <h2 id="contact-title" class="display display--md">Ready when you are.</h2>
+      <p>Tell me about your store and what you need help with, and I’ll get back to you with a plan.</p>
+    </div>
+    <div class="roll">
+      <article class="seg seg--last">
+        <div class="perf" aria-hidden="true"></div>
+        <dl class="r-totals r-totals--big">
+          <div><dt>Stores worked on</dt><dd>200+</dd></div>
+          <div><dt>Years on Shopify</dt><dd>2+</dd></div>
+          <div><dt>Services on this order</dt><dd>7</dd></div>
+        </dl>
+        <hr class="r-rule r-rule--double">
+        <h3 class="r-heading">Pick how to reach me</h3>
+        <div class="stubs">
+          <a class="stub stub--canary" data-link="whatsapp" href="#contact">
+            <span class="stub__k">WhatsApp</span>
+            <span class="stub__v" data-show="whatsapp">Message me</span>
+            <span class="stub__go">Open chat</span>
+          </a>
+          <a class="stub" data-link="email" href="#contact">
+            <span class="stub__k">Email</span>
+            <span class="stub__v" data-show="email">Send an email</span>
+            <span class="stub__go">Write email</span>
+          </a>
+          <a class="stub stub--pink" data-link="fiverr" href="#contact">
+            <span class="stub__k">Fiverr</span>
+            <span class="stub__v">Order a gig</span>
+            <span class="stub__go">View profile</span>
+          </a>
+          <a class="stub" data-link="upwork" href="#contact">
+            <span class="stub__k">Upwork</span>
+            <span class="stub__v">Hire on contract</span>
+            <span class="stub__go">View profile</span>
+          </a>
+        </div>
+        <hr class="r-rule">
+        <p class="r-center r-big">Thank you</p>
+        <p class="r-center r-small">Please keep this receipt</p>
+        <div class="barcode" data-barcode="THANKYOU" aria-hidden="true"></div>
+        <div class="endroll" aria-hidden="true"></div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>© <span data-year>2026</span> Azgor Hossin. Independent freelancer. Shopify, WooCommerce and other names are trademarks of their owners; no affiliation is implied.</p>
+  <a href="#top">Back to top</a>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

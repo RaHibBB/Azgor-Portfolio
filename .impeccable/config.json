@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "border-right: 2px solid var(--ink)",
+        "createdAt": "2026-09-26T12:44:56.174Z",
+        "reason": "claude: table-cell divider in the before/after grid, not an accent tab"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-09-26T12:44:56.250Z",
+        "reason": "claude: receipt perforations and dashed rules are the committed receipt world, not decoration"
+      }
+    ]
+  }
+}
