@@ -406,10 +406,11 @@ p { text-wrap: pretty; }
 .log time { font: 800 22px/1 var(--wide); font-variation-settings: "wdth" 110; font-variant-numeric: tabular-nums; }
 
 /* KPI grid */
-.kpi { margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-.kpi > div { padding: 22px; border-radius: 20px; background: var(--black-2); display: grid; gap: 10px; align-content: start; }
+.kpi { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+.kpi > div { padding: 22px; border-radius: 20px; background: var(--black-2); display: grid; gap: 10px; align-content: start; min-width: 0; container-type: inline-size; }
 .kpi dt { font: 600 11.5px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--on-black-2); }
-.kpi dd { margin: 0; font: 900 clamp(34px, 3.6vw, 52px)/1 var(--wide); font-variation-settings: "wdth" 100; font-variant-numeric: tabular-nums; }
+/* sized to the tile, so the widest value ("£209.95") always fits */
+.kpi dd { margin: 0; font: 900 clamp(26px, 17cqi, 52px)/1 var(--wide); font-variation-settings: "wdth" 90; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .kpi .d { font: 700 12px/1 var(--mono); padding: 5px 9px; border-radius: 999px; justify-self: start; background: var(--acid); color: var(--ink); }
 .kpi .d--down { background: var(--pink-soft); }
 
